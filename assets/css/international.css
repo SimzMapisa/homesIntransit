@@ -1,0 +1,228 @@
+.home-hero {
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+    color: #fff;
+}
+
+.home-hero h1 {
+    font-size: var(--main-heading-mobile);
+    color: var(--text-color);
+}
+
+.home-hero p {
+    font-size: var(--paragraph-mobile);
+    color: var(--text-color);
+}
+
+.hero-img-container {
+    position: absolute;
+}
+
+.hero-img-container img {
+    width: 100vw;
+    opacity: .2;
+}
+
+.home-hero .content-wrapper {
+    position: relative;
+}
+
+.int-sectionB h2 {
+    font-size: var(--sub-heading-mobile);
+    font-weight: var(--sub-heading-mobile-fw);
+}
+
+.int-sectionB h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: red;
+    margin-top: 10px;
+}
+
+.int-sectionC {
+    background-color: var(--text-color);
+}
+
+.int-sectionC h3 {
+    font-size: var(--sub-heading-mobile);
+    font-weight: var(--sub-heading-mobile-fw);
+    padding-bottom: 8px;
+}
+
+.int-sectionC p {
+    padding-bottom: 16px;
+}
+
+.int-sectionD h3 {
+    font-size: var(--sub-heading-mobile);
+    font-weight: var(--sub-heading-mobile-fw);
+    padding-bottom: 8px;
+}
+
+.int-sectionD p {
+    padding-bottom: 16px;
+}
+
+.int-sectionE h4 {
+    font-size: var(--sub-heading-mobile);
+    font-weight: var(--sub-heading-mobile-fw);
+    padding-bottom: 8px;
+}
+
+.int-sectionE p {
+    padding-bottom: 16px;
+}
+
+.int-sectionF {
+    background: #000;
+    height: fit-content;
+}
+
+.int-sectionF h5 {
+    font-size: var(--sub-heading-mobile);
+    font-weight: var(--sub-heading-mobile-fw);
+    padding-bottom: 8px;
+    color: rgb(211, 211, 211);
+}
+
+.int-sectionF .hero-img-container img {
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+}
+
+.int-sectionG h4 {
+    font-size: var(--sub-heading-mobile);
+    font-weight: var(--sub-heading-mobile-fw);
+    padding-bottom: 8px;
+}
+
+.int-sectionG h5 {
+    font-size: 19px;
+    font-weight: var(--sub-heading-mobile-fw);
+    padding-bottom: 8px;
+}
+
+.int-sectionG p {
+    padding-bottom: 16px;
+}
+
+@media screen and (min-width: 800px) {
+    .home-hero {
+        min-height: 50vh;
+    }
+
+    .home-hero .hero-img-container {
+        height: 100%;
+    }
+
+    .home-hero .hero-img-container img {
+        height: 100%;
+        opacity: 0.3;
+    }
+
+    .content-wrapper {
+        display: flex;
+        align-items: center;
+        min-height: 50vh;
+    }
+
+    .content-container {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .content-container h1 {
+        font-weight: 600;
+        font-size: 2rem;
+        padding-bottom: 24px;
+    }
+
+    /* Section B */
+    .int-sectionB .content-wrapper {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .int-sectionB h2 {
+        font-weight: 600;
+        padding-right: 40px;
+    }
+
+    .int-sectionB .content {
+        width: 550px;
+    }
+
+    .int-sectionB .image-wrapper {
+        width: 550px;
+    }
+
+    /* Section C */
+    .int-sectionC {
+        padding: 100px 0;
+    }
+
+    .int-sectionC h3 {
+        font-weight: 600;
+        padding-bottom: 16px;
+        padding-right: 150px;
+    }
+
+    /* Section D */
+    .int-sectionD h3 {
+        font-weight: 600;
+        padding-bottom: 16px;
+        padding-right: 150px;
+        padding-right: 200px;
+    }
+
+    /* Section E */
+    .int-sectionE {
+        padding: 0 0 100px 0;
+    }
+
+    .int-sectionE h4 {
+        font-weight: 600;
+        padding-bottom: 16px;
+        padding-right: 150px;
+    }
+
+    .int-sectionE .image-wrapper img {
+        width: 100%;
+    }
+
+    /* Section F */
+    .int-sectionF {
+        min-height: 400px;
+    }
+
+    .int-sectionF .content-container h5 {
+        font-weight: 400;
+        padding-bottom: 16px;
+        line-height: 150%;
+    }
+
+    /* Section G */
+    .int-sectionG {
+        padding: 100px 0;
+    }
+
+    .int-sectionG .wrapper {
+        width: 1100px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .int-sectionG .top {
+        width: 50%;
+        padding-right: 40px;
+    }
+
+    .int-sectionG .bottom {
+        width: 50%;
+    }
+
+}
